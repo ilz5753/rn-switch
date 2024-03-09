@@ -1,0 +1,70 @@
+{
+  "name": "@ilz5753/rn-switch",
+  "version": "0.0.1",
+  "description": "React Native Switch component created on top of reanimated & gesture handler",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "scripts": {
+    "prepare": "bob build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilz5753/rn-switch.git"
+  },
+  "author": "Mehdi abdollahi <mehdi.abdollahi3578@gmail.com> (https://github.com/ilz5753)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilz5753/rn-switch/issues"
+  },
+  "homepage": "https://github.com/ilz5753/rn-switch#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "resolutions": {
+    "@types/react": "*"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.73.5",
+    "react-native-reanimated": "^3.7.1",
+    "react-native-gesture-handler": "^2.15.0"
+  },
+  "peerDependencies": {
+    "react-native-gesture-handler": ">=2.0.0",
+    "react-native-reanimated": ">=3.0.0",
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "typescript": "5.0.4",
+    "react-native-builder-bob": "^0.20.0",
+    "@types/react-native": "^0.70.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.json"
+        }
+      ]
+    ]
+  }
+}
